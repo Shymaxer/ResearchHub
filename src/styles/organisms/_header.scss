@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid $gray92;
+    padding: 12px 50px 10px 40px;
+}
+
+
+@media (max-width: $small) {
+
+}

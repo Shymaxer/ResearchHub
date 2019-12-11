@@ -1,0 +1,17 @@
+.nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+
+    &.banner__links {
+        padding-bottom: 42px;
+
+        ul {
+            justify-content: space-between;
+        }
+    }
+
+}
+

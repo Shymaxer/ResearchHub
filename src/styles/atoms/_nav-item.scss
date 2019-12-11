@@ -1,0 +1,22 @@
+.nav-item {
+    a {
+        display: block;
+        position: relative;
+        margin-right: 33px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $black;
+    }
+}
+
+
+@media (max-width: $small) {
+    .nav-item {
+        a {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+}

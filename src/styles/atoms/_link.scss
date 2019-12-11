@@ -1,0 +1,18 @@
+a {
+    color: $orange;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    &:hover {
+        text-decoration: none;
+        color: $white;
+    }
+
+  
+}
+
+
+@media (max-width: $small) {
+
+}

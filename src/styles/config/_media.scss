@@ -1,0 +1,8 @@
+$medium: 1310px;
+$small: 992px;
+
+@media (min-width: $medium) {
+    .container {
+        max-width: $medium;
+    }
+}
