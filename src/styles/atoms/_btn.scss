@@ -1,10 +1,14 @@
 .button {
+    background: $neonBlue;
+    border: 1px solid $neonBlue;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 13px 27px;
+    text-decoration: none;
 
 }
 
 
 @media (max-width: $small) {
-    .button {
-      
-    }
+    .button {}
 }

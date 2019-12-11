@@ -1,12 +1,14 @@
 import React from "react"
+import NavItem from "../atoms/NavItem"
 
 function HeaderNav(props) {
     return (
         <div className="nav">
             <ul>
-                <li className="nav-item">About</li>
-                <li className="nav-item">Hubs</li>
-                <li className="nav-item">Help</li>
+                <NavItem href="#" text="About"/>
+                <NavItem href="#" text="Hubs"/>
+                <NavItem href="#" text="Help"/>
+                
             </ul>
         </div>
     )
