@@ -5,7 +5,7 @@ function HeaderSearch(props) {
     return (
         <div className="search-container">
             <input className="search" type="search" placeholder="Search.."></input>
-            <a href={props.href}><img className="img-loupe" src={loupe}></img></a> 
+            <a href={props.href}><img className="img-loupe" src={loupe} alt=""></img></a> 
         </div>
     )
 }

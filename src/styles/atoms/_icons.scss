@@ -1,20 +1,26 @@
 [class^="icon"] {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.icon-tr {
-  /*   background-image: url($icons+"/arrowR.svg");
-    width: 10.1px;
-    height: 10px;
-    margin-left: 7.75px; */
+.icon-gem {
+  background-image: url("../../images/icons/gem.png");
+  width: 21px;
+  height: 21px;
+  margin-left: 10px;
+}
+
+.icon-arrowDown {
+  background-image: url("../../images/icons//Path.svg");
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
 
 
-@media (max-width: $small) {
-   
-}
+@media (max-width: $small) {}

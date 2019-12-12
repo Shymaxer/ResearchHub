@@ -2,7 +2,12 @@ import React from "react"
 
 function HeaderProfile(props) {
     return (
-        <div className="header-profile"></div>
+        <div className="header-profile">
+            <img className="avatar" src={props.avatar} alt=""></img>
+            <i className="icon-arrowDown"></i>
+            <h5 className="">{props.value}</h5>
+             <i className="icon-gem"></i>
+        </div>
     )
 }
 
