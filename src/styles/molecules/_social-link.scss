@@ -1,0 +1,15 @@
+.social-links{
+    margin-right: 38px;
+    
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        li{
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,14 +1,4 @@
-.title {
-    /*     font-family: $ProximaNovaBold;
-    font-weight: bold;
-    color: $darkBlue;
-    font-size: 45px;
-    line-height: 52px; */
-
-
-
-
-}
+.title {}
 
 .sub-text {
     color: $darkBlue;
@@ -19,10 +9,18 @@
 
     &.sub-text--white {
         color: $white;
+        opacity: 0.8;
     }
 
     &.sub-text--lh {
 
+        line-height: 19px;
+    }
+
+    .value-text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
         line-height: 19px;
     }
 }

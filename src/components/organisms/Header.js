@@ -9,7 +9,7 @@ import avatar from "../../images/avatar.svg"
 function Header(props) {
     return (
         <header className="header">
-            <a className="logo" href="#">
+            <a className="logo logo--header" href="#">
                 <img className="logo__image" src={logoheaderpic}></img>                          
             </a>
                    

@@ -1,15 +1,23 @@
 .logo {
-    position: relative;
-    width: 216px;
-        height: 60px;
-        background-image: url("../../images/logoHeaderText.svg");
-        margin-right: 70px;
+
     .logo__image {
         position: absolute;
         left: 10%;
         top: 10%;
-       
+
+    }
+
+    &.logo--header {
+
+        position: relative;
+        width: 216px;
+        height: 60px;
+        background-image: url("../../images/logoHeaderText.svg");
+        margin-right: 70px;
+    }
+    &.logo--footer{
+
+      margin-right: 70px;
     }
 
 }
-

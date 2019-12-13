@@ -5,7 +5,7 @@ function HeaderProfile(props) {
         <div className="header-profile">
             <img className="avatar" src={props.avatar} alt=""></img>
             <i className="icon-arrowDown"></i>
-            <h5 className="">{props.value}</h5>
+            <h5 className="value-text">{props.value}</h5>
              <i className="icon-gem"></i>
         </div>
     )

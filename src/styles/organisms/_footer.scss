@@ -1,6 +1,27 @@
 .footer {
-  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 29px 50px 28px 62px;
+    background-color: $darkerBlue;
+
 }
-@media (max-width: $small) {
-  
+
+.footer__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.footer__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: $small) {}
