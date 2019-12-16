@@ -6,7 +6,6 @@ import {navMain, navPolicy} from "../data/navItems"
 
 
 function Footer(props) {
-    console.log(navMain);
     return (
         <footer className="footer">
             <div className="footer__left">
@@ -21,7 +20,6 @@ function Footer(props) {
                 <SocilaLinks />
                 <h5 className="sub-text sub-text--white">© ResearchHub 2019. All rights reserved</h5>
            </div>
-            
         </footer>
     )
 }

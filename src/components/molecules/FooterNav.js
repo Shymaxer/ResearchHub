@@ -4,9 +4,7 @@ import NavItem from "../atoms/NavItem"
 
 
 function FooterNav(props) {
-
     const navItems = props.items.map(item => <NavItem key={item.name} href={item.href} text={item.text} />)
-    console.log(navItems);
     return (
         <div className="nav nav--footer">
             <ul>

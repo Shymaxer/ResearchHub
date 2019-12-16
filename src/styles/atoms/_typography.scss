@@ -1,4 +1,36 @@
-.title {}
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 42px;
+    color: $darkBlue;
+
+    &.title--small {
+        font-size: 22px;
+        line-height: 33px;
+    }
+}
+
+.sub-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $darkBlue;
+    mix-blend-mode: normal;
+    opacity: 0.65;
+
+    &.sub-title--small {
+        font-size: 14px;
+        line-height: 16px;
+        opacity: 0.6;
+        &.sub-title--small2 {
+            opacity: 0.65;
+            margin-bottom: 22px;
+            margin-top: 22px;
+        }
+    }
+}
 
 .sub-text {
     color: $darkBlue;
@@ -23,6 +55,15 @@
         font-size: 16px;
         line-height: 19px;
     }
+}
+
+.dropzone-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $darkBlue;
+    margin-top: 15px;
 }
 
 @media (max-width: $small) {}

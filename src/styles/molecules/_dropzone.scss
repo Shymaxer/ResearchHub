@@ -1,0 +1,8 @@
+.dropzone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(78, 83, 255, 0.0252131);
+    border: 1.5px dashed $neonBlue;
+    padding: 50px 168px;
+}
