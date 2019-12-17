@@ -26,9 +26,12 @@
 @import "molecules/search-container";
 @import "molecules/header-profile";
 @import "molecules/social-link";
-@import "molecules/section-title.scss";
+@import "molecules/section-title";
 @import "molecules/upload-section";
 @import "molecules/dropzone";
+@import "molecules/uploaded-zone";
+@import "molecules/uf-section-title";
+@import "molecules/link-upload";
 
 /* Organisms */
 @import "organisms/header";

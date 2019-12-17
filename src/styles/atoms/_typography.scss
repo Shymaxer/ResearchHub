@@ -9,6 +9,27 @@
         font-size: 22px;
         line-height: 33px;
     }
+
+    &.title--sm2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &.title--sm3 {
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 6px;
+    }
+}
+
+.star {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $neonBlue;
 }
 
 .sub-title {
@@ -24,6 +45,7 @@
         font-size: 14px;
         line-height: 16px;
         opacity: 0.6;
+
         &.sub-title--small2 {
             opacity: 0.65;
             margin-bottom: 22px;

@@ -5,4 +5,7 @@
     background: rgba(78, 83, 255, 0.0252131);
     border: 1.5px dashed $neonBlue;
     padding: 50px 168px;
+    &.dropzone--disabled{
+        display: none;
+    }
 }

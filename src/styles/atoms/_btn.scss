@@ -8,7 +8,17 @@
 
 }
 
-
+.remove-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../images/icons/delete-3.svg");
+    background-color: transparent;
+    width: 14px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+}
 @media (max-width: $small) {
     .button {}
 }

@@ -1,6 +1,15 @@
 import React from "react"
 import DropZone from "./DropZone"
 
+function runScript(e) {
+  //See notes about 'which' and 'key'
+  console.log(e.keyCode);
+  if (e.keyCode == 13) {
+      var tb = document.getElementById("link");
+      console.log(tb);
+      return false; // returning false will prevent the event from bubbling up.
+  }
+}
 
 function Upload(props) {
     return (
@@ -12,8 +21,12 @@ function Upload(props) {
         
         <hr className="line"></hr>
         <DropZone />
-        <p className="sub-title sub-title--small sub-title--small2">or paste a url to the paper</p>
-        <input className="input" type="link" placeholder="Paste a url to the paper"></input>
+        <div className="link-upload">
+            <p className="sub-title sub-title--small sub-title--small2">or paste a url to the paper</p>
+          <input className="input" id="link" placeholder="Paste a url to the paper" onKeyPress={(e) => runScript(e)}></input>
+        </div>
+        
+      
       </div>
       
     )
