@@ -17,7 +17,7 @@
 @import "atoms/search";
 @import "atoms/line";
 @import "atoms/input";
-
+@import "atoms/radio-item";
 
 
 
@@ -32,6 +32,11 @@
 @import "molecules/uploaded-zone";
 @import "molecules/uf-section-title";
 @import "molecules/link-upload";
+@import "molecules/type-choose";
+@import "molecules/date-block";
+@import "molecules/select";
+@import "molecules/hubs-block";
+@import "molecules/papertitle-input";
 
 /* Organisms */
 @import "organisms/header";

@@ -1,0 +1,14 @@
+.date-block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 37px;
+    width: 100%;
+    max-width: 600px;
+
+    .date-item {
+        margin-right: 20px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

@@ -2,12 +2,11 @@ import React from "react"
 import DropZone from "./DropZone"
 
 function runScript(e) {
-  //See notes about 'which' and 'key'
   console.log(e.keyCode);
-  if (e.keyCode == 13) {
+  if (e.keyCode === 13) {
       var tb = document.getElementById("link");
       console.log(tb);
-      return false; // returning false will prevent the event from bubbling up.
+      return false; 
   }
 }
 

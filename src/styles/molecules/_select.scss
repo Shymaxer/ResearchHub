@@ -1,0 +1,35 @@
+.select__control {
+    background: $ghostWhite !important;
+    border: 1px solid #E8E8F2 !important;
+    box-sizing: border-box;
+    border-radius: 2px !important;
+}
+
+
+.select__value-container--is-multi {
+    padding: 11px 15px !important;
+}
+
+.select__indicator-separator {
+    display: none;
+}
+
+.select__placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $darkBlue !important;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.select__input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $darkBlue !important;
+    mix-blend-mode: normal;
+}
+
