@@ -18,6 +18,7 @@
 @import "atoms/line";
 @import "atoms/input";
 @import "atoms/radio-item";
+@import "atoms/author-checkbox";
 
 
 
@@ -37,9 +38,10 @@
 @import "molecules/select";
 @import "molecules/hubs-block";
 @import "molecules/papertitle-input";
+@import "molecules/authors-select";
 
 /* Organisms */
 @import "organisms/header";
 @import "organisms/footer";
 @import "organisms/steps";
-
+@import "organisms/modal-window";
