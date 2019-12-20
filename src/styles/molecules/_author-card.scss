@@ -1,0 +1,15 @@
+.author-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 26px;
+    border-bottom: 1px solid $gray92;;
+
+    .author-card-bl-l {
+        display: flex;
+        flex-direction: row;
+    }
+    .author-avatar{
+        margin-right: 10px;
+    }
+}

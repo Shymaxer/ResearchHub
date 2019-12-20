@@ -1,3 +1,7 @@
+import linkedIn from "../../images/icons/LinkedIn.svg";
+import fb from "../../images/icons/fb.svg"
+import link from "../../images/icons/link.svg"
+
 export const inputs = [{
         key: 'in1',
         title: 'First Name',
@@ -29,19 +33,19 @@ export const inputs = [{
 
 export const linksinputsdata = [{
     key: 'inl1',
-    icon: '',
+    icon: fb,
     placeholder: 'Paste link here'
 },
 
 {
     key: 'inl2',
-    icon: '',
+    icon: linkedIn,
     placeholder: 'Paste link here'
 },
 
 {
     key: 'inl3',
-    icon: '',
+    icon: link,
     placeholder: 'Paste link here'
 },
 

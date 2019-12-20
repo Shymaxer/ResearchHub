@@ -36,3 +36,10 @@
 .select-authors__multi-value {
     display: none !important;
 }
+
+.select-authors__option {}
+
+.select-authors__option--is-selected {
+    background-color: transparent !important;
+    color: inherit !important;
+}

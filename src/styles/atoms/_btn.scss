@@ -8,7 +8,7 @@
 
 }
 
-.remove-button{
+.remove-button {
     position: absolute;
     top: 0;
     right: 0;
@@ -19,6 +19,20 @@
     cursor: pointer;
     border: none;
 }
+
+.popup-button {
+    background: $neonBlue;
+    border: 1px solid $neonBlue;
+    border-radius: 4px;
+    padding: 18px 85px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    align-self: center;
+}
+
 @media (max-width: $small) {
     .button {}
 }
