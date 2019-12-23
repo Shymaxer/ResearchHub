@@ -80,7 +80,7 @@ export default class extends Component {
                     hideSelectedOptions={false}
                     isSearchable="true" 
                     backspaceRemovesValue={false}
-                    menuIsOpen="true"
+                    /* menuIsOpen="true" */
                     onChange={e => {this.addedAutor(e)}} 
                 />
                 <div>

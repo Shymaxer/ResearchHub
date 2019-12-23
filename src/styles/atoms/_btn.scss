@@ -33,6 +33,41 @@
     align-self: center;
 }
 
+.button-step {
+    max-width: 180px;
+    max-height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $neonBlue;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 20px;
+    background: $neonBlue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: $white;
+    padding: 15px 0 17px;
+
+    &.button-step--border {
+        color: $neonBlue;
+        background-color: transparent;
+    }
+
+    &.button-step--prev {
+        border: none;
+        color: $neonBlue;
+        background-color: transparent;
+    }
+
+    &.button-step--ff {
+        font-family: $SansPro;
+    }
+}
+
 @media (max-width: $small) {
     .button {}
 }

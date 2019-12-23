@@ -1,0 +1,18 @@
+.buttons-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 0 322px;
+
+    .main-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .prev-i {
+        margin-right: 10px;
+    }
+}
