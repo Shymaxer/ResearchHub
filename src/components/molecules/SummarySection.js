@@ -1,8 +1,11 @@
 import React from "react"
+import TextAreaBlock from "./TextAreaBlock";
+import {textareas} from "../data/textareas"
 
 
 
 function SummarySection(props) {
+    const textAreas = textareas.map(item => <TextAreaBlock key={item.key} title={item.title} placeholder={item.placeholder}/>);
     return (
       <div className="upload-section">
         <div className="section-title">
@@ -11,7 +14,9 @@ function SummarySection(props) {
         </div>
         
         <hr className="line"></hr>
-       
+        <div className="summary-content">
+          {textAreas}
+        </div>
 
       </div>
       

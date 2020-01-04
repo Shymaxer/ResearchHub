@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Select, { components } from "react-select";
 import PopUp from "./PopUp";
 import createClass from "create-react-class";
-import { authors } from "../data/authors";
+import { authors, colours } from "../data/authors";
 import AddedAuthor from "./AddedAuthor";
 import { createPortal } from "react-dom";
 
@@ -23,13 +23,13 @@ const Option = createClass({
                 </div>         
                 <div className="author-checkbox">
                      <input
-                        id={this.props.data.id}
+                        id={this.props.data.value}
                         type="checkbox"
                         checked={this.props.isSelected}
                         onChange={e => null}
                     />
-                    <label htmlFor={this.props.data.id}></label>
-                </div>           
+                    <label htmlFor={this.props.data.value}></label>
+                 </div>           
             </div>      
         </components.Option>
       </div>
@@ -76,7 +76,7 @@ export default class extends Component {
                     closeMenuOnSelect={false}
                     isMulti
                     components={{ Option, MultiValue }}
-                    options={authors}
+                    options={authors} 
                     hideSelectedOptions={false}
                     isSearchable="true" 
                     backspaceRemovesValue={false}
