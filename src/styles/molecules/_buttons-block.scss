@@ -2,14 +2,15 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-width: 1278px;
     justify-content: center;
-    margin: 0 322px;
 
     .main-buttons {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 50%;
+        width: 100%;
+        margin-right: 16%;
     }
 
     .prev-i {

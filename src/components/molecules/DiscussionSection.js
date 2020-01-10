@@ -1,5 +1,6 @@
 import React from "react"
 import Input from "../atoms/Input"
+import StatusBar from "../atoms/StastusBar"
 
 
 
@@ -7,14 +8,17 @@ import Input from "../atoms/Input"
 function DiscussionSection(props) {
     return (
       <div className="upload-section">
+        <StatusBar complete={'100%'}/>
         <div className="section-title">
             <h3 className="title title--small">Discussion</h3>
         </div>
         
         <hr className="line"></hr>
         <Input title="Title" star="" placeholder="Title of discussion"/>
-          
-
+        <div className="papertitle-input">
+        <h4 className="title title--sm3">Question</h4>
+          <textarea  className="textarea textarea--b" placeholder="Leave a question or a comment"></textarea>
+        </div>     
       </div>
       
     )

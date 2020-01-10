@@ -3,13 +3,42 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 26px;
-    border-bottom: 1px solid $gray92;;
+    border-bottom: 1px solid $gray92;
 
     .author-card-bl-l {
         display: flex;
         flex-direction: row;
+
+        .author-name {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: $darkBlue;
+        }
+
+        .author-email {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: $darkBlue;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
     }
-    .author-avatar{
+
+    .author-avatar {
         margin-right: 10px;
+    }
+
+    &.author-card--gray{
+        background: #F7F7FB;
+        border-radius: 3px;
+        border: none;
+        padding: 18px 23px;
+        margin-bottom: 11px;
+        position: relative;
     }
 }

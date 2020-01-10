@@ -4,10 +4,10 @@ import avatar3 from "../../images/authors/author3.svg"
 import avatar4 from "../../images/authors/author4.svg"
 
 export const authors = [
-    { value: "a1", avatar: avatar1, name: 'Joshua Cooper', email: 'joshuacopper56@gmail.com', isFixed: true },
-    { value: "a2", avatar: avatar2, name: 'Joanna Dopler', email: 'dopppler@gmail.com'},
-    { value: "a3", avatar: avatar3, name: 'Jordyn Zakarison', email: 'jordyn_zakarison@gmail.com'},
-    { value: "a4", avatar: avatar4, name: 'John Smith', email: 'john89_smith@gmail.com'},
+    { value: "a1", avatar: avatar1, label: 'Joshua Cooper', email: 'joshuacopper56@gmail.com', isFixed: true },
+    { value: "a2", avatar: avatar2, label: 'Joanna Dopler', email: 'dopppler@gmail.com'},
+    { value: "a3", avatar: avatar3, label: 'Jordyn Zakarison', email: 'jordyn_zakarison@gmail.com'},
+    { value: "a4", avatar: avatar4, label: 'John Smith', email: 'john89_smith@gmail.com'},
 
   ];
 

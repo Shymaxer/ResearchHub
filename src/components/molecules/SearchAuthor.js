@@ -9,7 +9,6 @@ import { createPortal } from "react-dom";
 
 const Option = createClass({
   render() {
-    console.log(this.props);
     return (
       <div>
         <components.Option {...this.props}>
@@ -17,17 +16,17 @@ const Option = createClass({
                 <div className="author-card-bl-l">
                   <img className="author-avatar" src={this.props.data.avatar} alt=""></img>
                   <div className="author-desc">
-                      <h5 className="author-name">{this.props.data.name}</h5>
+                      <h5 className="author-name">{this.props.data.label}</h5>
                       <p className="author-email">{this.props.data.email}</p>
                   </div>
                 </div>         
                 <div className="author-checkbox">
-                     <input
+                      <input
                         id={this.props.data.value}
                         type="checkbox"
                         checked={this.props.isSelected}
                         onChange={e => null}
-                    />
+                      />
                     <label htmlFor={this.props.data.value}></label>
                  </div>           
             </div>      
@@ -53,8 +52,7 @@ export default class extends Component {
     
     addedAutor(e) {
         this.setState({
-            asss: e.map(item => <AddedAuthor key={item.id} name={item.name} email={item.email}
-                />)
+            asss: e.map(item => <AddedAuthor key={item.id} name={item.label} email={item.email} avatar={item.avatar}/>)
           
         }); 
       
@@ -103,7 +101,7 @@ export default class extends Component {
 const MultiValue = props => {
   return (
     <components.MultiValue {...props}>
-      <span>{props.data.name}</span>
+      <span>{props.data.label}</span>
     </components.MultiValue>
   );
 };

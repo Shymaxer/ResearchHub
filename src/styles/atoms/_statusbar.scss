@@ -1,0 +1,26 @@
+.statusbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .sb-wrapper {
+        position: relative;
+
+        .sb-uncomplete,
+        .sb-complete {
+            position: absolute;
+            background: #E6E6E6;
+            border-radius: 4px 4px 0px 0px;
+            height: 4px;
+            width: 100%;
+        }
+
+        .sb-complete {
+            position: absolute;
+            background: #26C938;
+
+        }
+    }
+
+}

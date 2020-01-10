@@ -1,0 +1,27 @@
+.textarea {
+    border: none;
+    width: 100%;
+    outline: none;
+    resize: none;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: $font-main;
+    background: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    &.textarea--b {
+        background: $ghostWhite;
+        border: 1px solid $lavender;
+        box-sizing: border-box;
+        border-radius: 2px;
+        line-height: 19px;
+        color: $darkBlue;
+        opacity: 0.5;
+        padding: 15px 16px;
+        margin: 0;
+    }
+}
