@@ -50,7 +50,7 @@ function Dropzone(props) {
     <section className="dropzone-container">
       <h4 className="title title--sm3">{titleState}<p className="star">*</p></h4>
       <div {...getRootProps({className: 'dropzone'})}>
-        <input {...getInputProps()} />
+        <input {...getInputProps()} id="file"/>
         <img src={uploadImg} alt=""></img>
         <p className="dropzone-text">Drag & drop or <a className='link'>browse</a> PDF to upload</p>     
       </div>

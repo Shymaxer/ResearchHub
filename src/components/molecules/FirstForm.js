@@ -15,7 +15,7 @@ function FirstForm(props) {
         </div>
         <hr className="line"></hr>
         <div className="first-form-content">
-          <Input title="Paper Title" star="*" placeholder="Paste paper title"/>   
+          <Input title="Paper Title" star="*" id="papertitle" placeholder="Paste paper title"/>   
           <div className="authors-select">
             <h4 className="title title--sm3">Authors<p className="star">*</p></h4>
             <SearchAuthor />

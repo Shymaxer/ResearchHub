@@ -8,7 +8,6 @@ export const authors = [
     { value: "a2", avatar: avatar2, label: 'Joanna Dopler', email: 'dopppler@gmail.com'},
     { value: "a3", avatar: avatar3, label: 'Jordyn Zakarison', email: 'jordyn_zakarison@gmail.com'},
     { value: "a4", avatar: avatar4, label: 'John Smith', email: 'john89_smith@gmail.com'},
-
   ];
 
   export const colours = [

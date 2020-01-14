@@ -14,10 +14,10 @@ function DiscussionSection(props) {
         </div>
         
         <hr className="line"></hr>
-        <Input title="Title" star="" placeholder="Title of discussion"/>
+        <Input title="Title" star="" id="discussiontitle" placeholder="Title of discussion"/>
         <div className="papertitle-input">
         <h4 className="title title--sm3">Question</h4>
-          <textarea  className="textarea textarea--b" placeholder="Leave a question or a comment"></textarea>
+          <textarea id="question" className="textarea textarea--b" placeholder="Leave a question or a comment"></textarea>
         </div>     
       </div>
       

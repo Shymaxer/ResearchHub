@@ -6,7 +6,7 @@ import StatusBar from "../atoms/StastusBar"
 
 
 function SummarySection(props) {
-    const textAreas = textareas.map(item => <TextAreaBlock key={item.key} title={item.title} placeholder={item.placeholder}/>);
+    const textAreas = textareas.map(item => <TextAreaBlock key={item.key} id={item.id} title={item.title} placeholder={item.placeholder}/>);
     return (
       <div className="upload-section">
         <StatusBar complete={'66.6%'}/>

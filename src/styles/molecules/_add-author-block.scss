@@ -1,0 +1,20 @@
+.add-author-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 14px;
+    margin-top: 10px;
+
+    .comment {
+        margin-right: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: $darkBlue;
+        mix-blend-mode: normal;
+        opacity: 0.51;
+    }
+}

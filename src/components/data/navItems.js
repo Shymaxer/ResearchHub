@@ -1,5 +1,5 @@
 export const navMain=[
-    { 
+    {   
         href: '#',
         text: 'About'
     },
