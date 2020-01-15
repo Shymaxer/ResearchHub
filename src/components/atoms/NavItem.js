@@ -1,8 +1,8 @@
 import React from "react"
 
-function NavItem(props) {
+function NavItem({ href, text }) {
     return (
-            <li className="nav-item"><a className="sub-text" href={props.href}>{props.text}</a></li>
+            <li className="nav-item"><a className="sub-text" href={href}>{text}</a></li>
             )
 }
             
