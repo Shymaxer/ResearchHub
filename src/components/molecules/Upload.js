@@ -1,11 +1,11 @@
 import React from "react"
 import DropZone from "./DropZone"
 
-function runScript(e) {
-  console.log(e.keyCode);
-  if (e.keyCode === 13) {
+function runScript({keyCode}) {
+  const KEY_CODE_ENTER = 13;
+
+  if (keyCode === KEY_CODE_ENTER) {
       var tb = document.getElementById("link");
-      console.log(tb);
       return false; 
   }
 }
