@@ -9,7 +9,7 @@ function FirstStep(props) {
     return (
        <div className="step">
            <Title title={title} subTitle={subTitle}/>
-            <UploadSection />
+            <UploadSection {...props}/>
        </div>
     )
 }

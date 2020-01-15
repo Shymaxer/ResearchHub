@@ -8,6 +8,7 @@ import closeImg from "../../images/icons/close.svg";
 export default class PopUp extends Component {
   handleClick = () => {
     this.props.toggle();
+    document.body.style.overflowY = "scroll";
   };
 
   render() {

@@ -5,12 +5,11 @@ import StatusBar from "../atoms/StastusBar"
 
 
 function UploadSection(props) {
-    
-    return (
+  console.log("us",props);    return (
       <div className="upload-section">
         <StatusBar complete={'33.3%'}/>
         <Upload />
-        <FirstForm />
+        <FirstForm {...props}/>
       </div>
       
     )

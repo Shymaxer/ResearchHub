@@ -15,15 +15,15 @@ function FirstForm(props) {
         </div>
         <hr className="line"></hr>
         <div className="first-form-content">
-          <Input title="Paper Title" star="*" id="papertitle" placeholder="Paste paper title"/>   
+          <Input title="Paper Title" star="*" id="papertitle" placeholder="Paste paper title" value={props.title}/>   
           <div className="authors-select">
             <h4 className="title title--sm3">Authors<p className="star">*</p></h4>
             <SearchAuthor />
           </div>
             
 
-          <DateInput />
-          <TypeChoose />
+          <DateInput {...props.publication}/>
+          <TypeChoose {...props.type}/>
           <div className="hubs-block">
             <h4 className="title title--sm3">Hubs<p className="star">*</p></h4>
             <Select className="select-hubs" 

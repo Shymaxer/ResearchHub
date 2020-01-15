@@ -89,6 +89,37 @@
     padding: 8px 20px;
 }
 
+.add-btn {
+    color: $neonBlue;
+    border-radius: 50%;
+    cursor: default;
+    height: 43px;
+    width: 43px;
+    font-weight: normal;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.add-btn:before {
+    content: "+";
+    color: $neonBlue;
+    border-radius: 50%;
+    height: 43px;
+    width: 43px;
+    display: inline-block;
+    font: 20px/30px Arial;
+    
+    font-size: 31px;
+    position: relative;
+    text-align: center;
+    line-height: 43px;
+    text-indent: 0px;
+    background: transparent;
+    border: 1px solid $neonBlue;
+    border-image: initial;
+    vertical-align: middle;
+}
+
 @media (max-width: $small) {
     .button {}
 }

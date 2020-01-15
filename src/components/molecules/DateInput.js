@@ -8,7 +8,8 @@ function DateInput(props) {
                                                             id={item.id} 
                                                             title={item.title} 
                                                             star={item.star}
-                                                            placeholder={item.placeholder} />);
+                                                            placeholder={item.placeholder}
+                                                            value={props[item.id]} />);
     return (
         <div className="date-block">
             {dateParts}

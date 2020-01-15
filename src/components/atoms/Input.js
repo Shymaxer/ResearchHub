@@ -6,7 +6,7 @@ function Input(props) {
     return (
     <div className="papertitle-input">
         <h4 className="title title--sm3">{props.title}<p className="star">{props.star}</p></h4>
-        <input className="input" id={props.id} value={props.papertitle} placeholder={props.placeholder}></input>
+        <input className="input" id={props.id} defaultValue={props.value} placeholder={props.placeholder}></input>
     </div>
       
     )

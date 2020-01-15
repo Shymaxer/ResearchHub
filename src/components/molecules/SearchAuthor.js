@@ -1,31 +1,13 @@
 import React, { Component } from "react";
-import Select, { components } from "react-select";
-import { authors, colours } from "../data/authors";
+import Select from "react-select";
+import { authors} from "../data/authors";
 import AddedAuthor from "./AddedAuthor";
 import {MenuList} from "../atoms/MenuLIst"
+import {Option} from "../atoms/SelectOption"
+import AddAuthor from "../atoms/AddAuthor";
+import { createPortal } from "react-dom";
+import PopUp from "../molecules/PopUp";
 
-
-const Option = props => 
-  <components.Option {...props}>
-            <div className="author-card">
-                <div className="author-card-bl-l">
-                  <img className="author-avatar" src={props.data.avatar} alt=""></img>
-                  <div className="author-desc">
-                      <h5 className="author-name">{props.data.label}</h5>
-                      <p className="author-email">{props.data.email}</p>
-                  </div>
-                </div>         
-                <div className="author-checkbox">
-                      <input
-                        id={props.data.value}
-                        type="checkbox"
-                        checked={props.isSelected}
-                        onChange={e => null}
-                      />
-                    <label htmlFor={props.data.value}></label>
-                 </div>           
-            </div>      
-        </components.Option>
 
 export default class extends Component {
   
@@ -63,9 +45,15 @@ export default class extends Component {
       array.splice(array.indexOf(option), 1);
       this.state.selectRef.onChange(array, 'deselect-option');
     }
+
+    togglePop = () => {
+      this.setState({
+        seen: !this.state.seen
+      });
+      document.body.style.overflowY = "hidden"
+  };
     
     render() {
-        
         return (
             <div>
                 <Select
@@ -76,17 +64,19 @@ export default class extends Component {
                       this.state.selectRef = ref;
                     }}
                     isMulti
-                    components={{ Option, MultiValue, MenuList}}
+                    components={{ Option, MenuList}}
                     options={authors} 
                     hideSelectedOptions={false}
                     isSearchable="true" 
                     backspaceRemovesValue={false}
-                    // menuIsOpen="true"
+                    //menuIsOpen="true"
                     onChange={e => {this.addedAutor(e)}} 
                 />
                 <div>
-                    {this.state.asss}  
+                    {this.state.asss}
+                    { this.state.asss.length > 0 && <AddAuthor onClick={this.togglePop}/> }                   
                 </div>
+                {this.state.seen && createPortal(<PopUp toggle={this.togglePop} />, document.body)}
               
                
                 <div className="checkbox-block">
@@ -99,11 +89,3 @@ export default class extends Component {
         );
     }
 }
-
-const MultiValue = props => {
-  return (
-    <components.MultiValue {...props}>
-      <span id={props.data.value}>{props.data.label}</span>
-    </components.MultiValue>
-  );
-};

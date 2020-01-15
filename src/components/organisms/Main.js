@@ -147,7 +147,7 @@ class Main extends Component {
                 <section className="steps">
                     <Router>                      
                         <form>
-                            <Route path="/step1" exact component={FirstStep}/>
+                            <Route path="/step1" exact render={(props) => (<FirstStep {...this.state.data} />)}/>
                             <Route path="/step2" exact component={SecondStep}/>
                             <Route path="/step3" exact component={ThirdStep}/>                                             
                         </form> 
