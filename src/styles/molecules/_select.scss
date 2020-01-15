@@ -1,4 +1,5 @@
-.select__control, .select-authors__control {
+.select__control,
+.select-authors__control {
     background: $ghostWhite !important;
     border: 1px solid #E8E8F2 !important;
     box-sizing: border-box;
@@ -6,15 +7,18 @@
 }
 
 
-.select__value-container--is-multi, .select-authors__value-container--is-multi  {
+.select__value-container--is-multi,
+.select-authors__value-container--is-multi {
     padding: 11px 15px !important;
 }
 
-.select__indicator-separator, .select-authors__indicator-separator {
+.select__indicator-separator,
+.select-authors__indicator-separator {
     display: none;
 }
 
-.select__placeholder, .select-authors__placeholder {
+.select__placeholder,
+.select-authors__placeholder {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -24,7 +28,8 @@
     opacity: 0.5;
 }
 
-.select__input, .select-authors__input {
+.select__input,
+.select-authors__input {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -42,6 +47,11 @@
 }
 
 .select-authors__option {}
+
+.select-authors__menu {
+    max-height: 400px !important;
+    overflow-y: auto !important;
+}
 
 .select-authors__option--is-selected {
     background-color: transparent !important;
